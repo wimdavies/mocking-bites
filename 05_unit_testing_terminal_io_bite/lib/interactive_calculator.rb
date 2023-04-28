@@ -4,7 +4,15 @@ class InteractiveCalculator
   end
 
   def run
-     
+    @io.puts "Please enter a number"
+    first_num = @io.gets.chomp.to_i
+    @io.puts "Please enter another number"
+    second_num = @io.gets.chomp.to_i
+
+    result = first_num - second_num
+
+    @io.puts "Here is your result:"
+    @io.puts "#{first_num} - #{second_num} = #{result}"
   end
 end
 # interactive_calculator = InteractiveCalculator.new(Kernel)
